@@ -1,0 +1,598 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#"
+     xml:base="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#address"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#cosumption_per_person -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#cosumption_per_person">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#phone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#score -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#score"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#人均消费 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#人均消费">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地址 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地址">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#特色 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#特色">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#电话 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#电话">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#评分 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#评分">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_12d0d1f4_119a_4766_8287_d13d3afc57ae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_12d0d1f4_119a_4766_8287_d13d3afc57ae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">江干区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_173619af_12c2_4f94_9573_ddb70c79eb85 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_173619af_12c2_4f94_9573_ddb70c79eb85">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">临安</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_33868965_74bc_4a23_99f7_8f20dcd3d7a7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_33868965_74bc_4a23_99f7_8f20dcd3d7a7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">下城区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_437e5bf6_ad91_4729_bcd1_5f0708bac69c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_437e5bf6_ad91_4729_bcd1_5f0708bac69c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">拱墅区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_6129e3f2_0fd4_47f4_9acc_742a6ea02bef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_6129e3f2_0fd4_47f4_9acc_742a6ea02bef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">上城区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_8ccf0b25_b9ff_4e3e_8c0b_b0baaf396ce9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_8ccf0b25_b9ff_4e3e_8c0b_b0baaf396ce9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">西湖区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_ab51a4aa_86cd_43f6_8698_9d6774eac4ff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_ab51a4aa_86cd_43f6_8698_9d6774eac4ff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">萧山区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_bcee9fb7_d9af_4db1_96e0_10e68b2c9e29 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_bcee9fb7_d9af_4db1_96e0_10e68b2c9e29">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#西湖区"/>
+        <rdfs:label xml:lang="zh">111</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_d02e4222_eeee_4707_9a94_a4d9d179e7c8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_d02e4222_eeee_4707_9a94_a4d9d179e7c8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">滨江区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_d43dd87d_a9b2_4279_beb0_16c2e0856be2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#OWLClass_d43dd87d_a9b2_4279_beb0_16c2e0856be2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标"/>
+        <rdfs:label xml:lang="zh">富阳区</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#上城区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#上城区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#下城区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#下城区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#东南亚菜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#东南亚菜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#临安 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#临安">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#休闲小憩 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#休闲小憩">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#创意菜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#创意菜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#台湾菜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#台湾菜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#咖啡厅 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#咖啡厅">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商务宴请 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商务宴请">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#地标">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#家庭聚会 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#家庭聚会">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#富阳区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#富阳区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#小吃快餐 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#小吃快餐">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#川菜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#川菜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#情侣约会 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#情侣约会">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#拱墅区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#拱墅区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#日本料理 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#日本料理">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#朋友聚餐 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#朋友聚餐">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#江干区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#江干区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#海鲜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#海鲜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#湘菜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#湘菜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#滨江区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#滨江区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#火锅 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#火锅">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#烧烤 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#烧烤">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#粤菜 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#粤菜">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#自助餐 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#自助餐">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#茶馆 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#茶馆">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭州美食"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#萧山区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#萧山区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#西湖区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#西湖区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#商区"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#西餐 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#西餐">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#酒吧 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#酒吧">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#随便吃吃 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#随便吃吃">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#氛围"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#面包点心 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#面包点心">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#韩国料理 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#韩国料理">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#菜系"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#知味观 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#知味观">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜"/>
+        <人均消费 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</人均消费>
+        <地址 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">仁和路83号(近东坡路)</地址>
+        <特色 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">猫耳朵，小笼包，片儿川</特色>
+        <电话 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0571-87017778</电话>
+        <电话 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0571-87018638</电话>
+        <评分 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.0</评分>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#素描餐厅 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#素描餐厅">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜"/>
+        <人均消费 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</人均消费>
+        <地址 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">梅灵北路269号(近中天竺)</地址>
+        <特色 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">牛肉粒，榴莲烧鸭，老豆腐还是煲的好</特色>
+        <电话 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0571-88302722</电话>
+        <评分 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.6</评分>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#外婆家(杭州西溪天堂旗舰店) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#外婆家(杭州西溪天堂旗舰店)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜"/>
+        <人均消费 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</人均消费>
+        <地址 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">紫金港路21号西溪天堂旅游综合体20号楼</地址>
+        <特色 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">外婆家红烧肉，脆皮叉烧肉，榴莲酥</特色>
+        <电话 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0571-89937660</电话>
+        <评分 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.7</评分>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#天伦里餐厅(江文蟹宴) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#天伦里餐厅(江文蟹宴)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜"/>
+        <人均消费 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148</人均消费>
+        <地址 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">西溪路550号西溪新座7号楼1楼东</地址>
+        <特色 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">红糖麻糍，蟹粉豆腐，蟹粉小笼</特色>
+        <电话 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0571-81060001 0571-87672720</电话>
+        <评分 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.0</评分>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#新白鹿餐厅(西湖文化广场店) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#新白鹿餐厅(西湖文化广场店)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜"/>
+        <人均消费 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</人均消费>
+        <地址 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">中山北路487号西湖文化广场银泰百货5楼(近环球中心)</地址>
+        <特色 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">蛋黄鸡翅，糖醋排骨，话梅花生</特色>
+        <电话 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0571-88987698</电话>
+        <评分 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.9</评分>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#老头儿油爆虾(湖滨店) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#老头儿油爆虾(湖滨店)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食#杭帮菜"/>
+        <人均消费 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</人均消费>
+        <地址 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">湖滨路6号</地址>
+        <特色 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">油爆虾，干炸带鱼，油爆明虾</特色>
+        <电话 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0571-85779117</电话>
+        <评分 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.0</评分>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
