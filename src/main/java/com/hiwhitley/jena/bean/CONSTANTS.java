@@ -10,6 +10,9 @@ public class CONSTANTS {
 
     public static final String re_杭帮菜 = NAME_SPACE + NS + "杭帮菜";
     public static final String re_日本料理 = NAME_SPACE + NS + "日本料理";
+    public static final String re_火锅 = NAME_SPACE + NS + "火锅";
+    public static final String re_海鲜 = NAME_SPACE + NS + "海鲜";
+    public static final String re_东南亚菜 = NAME_SPACE + NS + "东南亚菜";
 
     public static final String property_individual_人均消费 = NAME_SPACE + NS + "人均消费";
     public static final String property_individual_地址 = NAME_SPACE + NS + "地址";

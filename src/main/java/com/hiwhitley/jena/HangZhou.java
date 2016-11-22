@@ -11,6 +11,8 @@ import org.apache.jena.util.FileManager;
 
 import java.io.*;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by hiwhitley on 16-11-18.
@@ -23,15 +25,26 @@ public class HangZhou extends HangZhouBase {
         HangZhou hangZhou = new HangZhou();
         hangZhou.readRDF(ontModel, CONSTANTS.INPUT_FILE_NAME);
 
-        //hangZhou.generateIndividuals(ontModel, re_杭帮菜);
-        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_日本料理);
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_日本料理, "/home/hiwhitley/文档/rdf/日本料理.json");
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_火锅, "/home/hiwhitley/文档/rdf/火锅.json");
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_海鲜, "/home/hiwhitley/文档/rdf/海鲜.json");
+        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_东南亚菜, "/home/hiwhitley/文档/rdf/东南亚菜.json");
 
         ontModel.write(System.out);
         hangZhou.writeToFile(ontModel);
+        Logger.getLogger("dsfhuid").log(Level.INFO, "123df1s4f1a6fd456");
     }
 
-    private void generateIndividuals(OntModel ontModel, String type) {
-        List<ShopIndividual> shopIndividuals = parseInputResource();
+    public List<ShopIndividual> parseInputResource(String filePath) {
+        String input = readToString(filePath);
+        Gson gson = new Gson();
+        List<ShopIndividual> shopIndividualList = gson.fromJson(input, new TypeToken<List<ShopIndividual>>() {
+        }.getType());
+        return shopIndividualList;
+    }
+
+    private void generateIndividuals(OntModel ontModel, String type, String filePath) {
+        List<ShopIndividual> shopIndividuals = parseInputResource(filePath);
         for (ShopIndividual shopIndividual : shopIndividuals) {
             CookingStyleShopFactory factory = CookingStyleShopFactory.getInstance(type);
             factory.createShop(ontModel, shopIndividual);
@@ -49,16 +62,6 @@ public class HangZhou extends HangZhouBase {
         ontModel.read(in, null);
     }
 
-    public List<ShopIndividual> parseInputResource() {
-        String input = readToString("/home/hiwhitley/文档/rdf/shop.json");
-        Gson gson = new Gson();
-        List<ShopIndividual> shopIndividualList = gson.fromJson(input, new TypeToken<List<ShopIndividual>>() {
-        }.getType());
-        return shopIndividualList;
-    }
-
-
-
     public void writeToFile(OntModel ontModel) {
         FileOutputStream file = null;
         try {
@@ -74,11 +77,11 @@ public class HangZhou extends HangZhouBase {
     public String readToString(String fileName) {
         String encoding = "UTF-8";
         File file = new File(fileName);
-        Long filelength = file.length();
-        byte[] filecontent = new byte[filelength.intValue()];
+        Long fileLength = file.length();
+        byte[] fileContent = new byte[fileLength.intValue()];
         try {
             FileInputStream in = new FileInputStream(file);
-            in.read(filecontent);
+            in.read(fileContent);
             in.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -86,7 +89,7 @@ public class HangZhou extends HangZhouBase {
             e.printStackTrace();
         }
         try {
-            return new String(filecontent, encoding);
+            return new String(fileContent, encoding);
         } catch (UnsupportedEncodingException e) {
             System.err.println("The OS does not support " + encoding);
             e.printStackTrace();
