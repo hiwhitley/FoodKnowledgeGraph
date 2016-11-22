@@ -28,7 +28,12 @@ public class HangZhou extends HangZhouBase {
 //        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_日本料理, "/home/hiwhitley/文档/rdf/日本料理.json");
 //        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_火锅, "/home/hiwhitley/文档/rdf/火锅.json");
 //        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_海鲜, "/home/hiwhitley/文档/rdf/海鲜.json");
-        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_东南亚菜, "/home/hiwhitley/文档/rdf/东南亚菜.json");
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_川菜, "/home/hiwhitley/文档/rdf/川菜.json");
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_湘菜, "/home/hiwhitley/文档/rdf/湘菜.json");
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_小吃快餐, "/home/hiwhitley/文档/rdf/小吃快餐.json");
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_粤菜, "/home/hiwhitley/文档/rdf/粤菜.json");
+//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_自助餐, "/home/hiwhitley/文档/rdf/自助餐.json");
+        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_烧烤, "/home/hiwhitley/文档/rdf/烧烤.json");
 
         ontModel.write(System.out);
         hangZhou.writeToFile(ontModel);
