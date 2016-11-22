@@ -2,10 +2,11 @@ package com.hiwhitley.jena;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.apache.jena.ontology.Individual;
+import com.hiwhitley.jena.bean.CONSTANTS;
+import com.hiwhitley.jena.bean.ShopIndividual;
+import com.hiwhitley.jena.factory.CookingStyleShopFactory;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.util.FileManager;
 
 import java.io.*;
@@ -20,25 +21,24 @@ public class HangZhou extends HangZhouBase {
     public static void main(String[] args) {
         OntModel ontModel = ModelFactory.createOntologyModel();
         HangZhou hangZhou = new HangZhou();
-        hangZhou.readRDF(ontModel, INPUT_FILE_NAME);
+        hangZhou.readRDF(ontModel, CONSTANTS.INPUT_FILE_NAME);
 
         //hangZhou.generateIndividuals(ontModel, re_杭帮菜);
-        hangZhou.generateIndividuals(ontModel, re_日本料理);
+        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_日本料理);
 
         ontModel.write(System.out);
         hangZhou.writeToFile(ontModel);
     }
 
     private void generateIndividuals(OntModel ontModel, String type) {
-        List<InputResource> inputResources = parseInputResource();
-        Resource resourceType = getResource(ontModel, type);
-        for (InputResource inputResource : inputResources) {
-            generateIndividual(ontModel, inputResource, resourceType);
+        List<ShopIndividual> shopIndividuals = parseInputResource();
+        for (ShopIndividual shopIndividual : shopIndividuals) {
+            CookingStyleShopFactory factory = CookingStyleShopFactory.getInstance(type);
+            factory.createShop(ontModel, shopIndividual);
         }
     }
 
     public void readRDF(OntModel ontModel, String inputFileName) {
-
 
         InputStream in = FileManager.get().open(inputFileName);
         if (in == null) {
@@ -49,33 +49,20 @@ public class HangZhou extends HangZhouBase {
         ontModel.read(in, null);
     }
 
-    public List<InputResource> parseInputResource() {
-        String input = readToString("/home/hiwhitley/文档/shop.json");
+    public List<ShopIndividual> parseInputResource() {
+        String input = readToString("/home/hiwhitley/文档/rdf/shop.json");
         Gson gson = new Gson();
-        List<InputResource> inputResourceList = gson.fromJson(input, new TypeToken<List<InputResource>>() {
+        List<ShopIndividual> shopIndividualList = gson.fromJson(input, new TypeToken<List<ShopIndividual>>() {
         }.getType());
-        return inputResourceList;
+        return shopIndividualList;
     }
 
-    public Individual generateIndividual(OntModel ontModel, InputResource bean, Resource type) {
 
-        Individual individual = ontModel.createIndividual(NAME_SPACE + NS + bean.getShop_name(), type);
-        individual.addLiteral(ontModel.getProperty(property_individual_人均消费), bean.getAvePerPerson())
-                .addLiteral(ontModel.getProperty(property_individual_地址), bean.getAddress())
-                .addLiteral(ontModel.getProperty(property_individual_特色), bean.getRecommend())
-                .addLiteral(ontModel.getProperty(property_individual_电话), bean.getTel())
-                .addLiteral(ontModel.getProperty(property_individual_评分), bean.getTaste());
-        return individual;
-    }
-
-    public Resource getResource(OntModel ontModel, String uri) {
-        return ontModel.getResource(uri);
-    }
 
     public void writeToFile(OntModel ontModel) {
         FileOutputStream file = null;
         try {
-            file = new FileOutputStream(OUT_FILE_NAME);
+            file = new FileOutputStream(CONSTANTS.OUT_FILE_NAME);
         } catch (FileNotFoundException e) {
             System.out.println("文件不存在");
             e.printStackTrace();

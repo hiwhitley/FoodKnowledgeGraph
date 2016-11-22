@@ -1,9 +1,9 @@
-package com.hiwhitley.jena;
+package com.hiwhitley.jena.bean;
 
 /**
  * Created by hiwhitley on 16-11-22.
  */
-public class InputResource {
+public class ShopIndividual {
 
     /**
      * _id : {"$oid":"58331135581f5214d9269ccb"}
