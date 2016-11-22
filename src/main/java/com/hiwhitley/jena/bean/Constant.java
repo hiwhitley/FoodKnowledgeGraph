@@ -3,7 +3,7 @@ package com.hiwhitley.jena.bean;
 /**
  * Created by hiwhitley on 16-11-22.
  */
-public class CONSTANTS {
+public class Constant {
 
     public static final String NAME_SPACE = "http://www.semanticweb.org/hiwhitley/ontologies/2016/10/杭州美食";
     public static final String NS = "#";

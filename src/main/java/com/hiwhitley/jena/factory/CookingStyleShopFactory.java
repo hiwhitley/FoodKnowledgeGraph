@@ -1,6 +1,6 @@
 package com.hiwhitley.jena.factory;
 
-import com.hiwhitley.jena.bean.CONSTANTS;
+import com.hiwhitley.jena.bean.Constant;
 import com.hiwhitley.jena.bean.ShopIndividual;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntModel;
@@ -31,12 +31,12 @@ public class CookingStyleShopFactory extends ShopFactory {
 
     public Individual generateIndividual(OntModel ontModel, ShopIndividual bean, Resource type) {
 
-        Individual individual = ontModel.createIndividual(CONSTANTS.NAME_SPACE + CONSTANTS.NS + bean.getShop_name(), type);
-        individual.addLiteral(ontModel.getProperty(CONSTANTS.property_individual_人均消费), bean.getAvePerPerson())
-                .addLiteral(ontModel.getProperty(CONSTANTS.property_individual_地址), bean.getAddress())
-                .addLiteral(ontModel.getProperty(CONSTANTS.property_individual_特色), bean.getRecommend())
-                .addLiteral(ontModel.getProperty(CONSTANTS.property_individual_电话), bean.getTel())
-                .addLiteral(ontModel.getProperty(CONSTANTS.property_individual_评分), bean.getTaste());
+        Individual individual = ontModel.createIndividual(Constant.NAME_SPACE + Constant.NS + bean.getShop_name(), type);
+        individual.addLiteral(ontModel.getProperty(Constant.property_individual_人均消费), bean.getAvePerPerson())
+                .addLiteral(ontModel.getProperty(Constant.property_individual_地址), bean.getAddress())
+                .addLiteral(ontModel.getProperty(Constant.property_individual_特色), bean.getRecommend())
+                .addLiteral(ontModel.getProperty(Constant.property_individual_电话), bean.getTel())
+                .addLiteral(ontModel.getProperty(Constant.property_individual_评分), bean.getTaste());
         return individual;
     }
 

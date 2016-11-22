@@ -2,7 +2,7 @@ package com.hiwhitley.jena;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.hiwhitley.jena.bean.CONSTANTS;
+import com.hiwhitley.jena.bean.Constant;
 import com.hiwhitley.jena.bean.ShopIndividual;
 import com.hiwhitley.jena.factory.CookingStyleShopFactory;
 import org.apache.jena.ontology.OntModel;
@@ -23,17 +23,17 @@ public class HangZhou extends HangZhouBase {
     public static void main(String[] args) {
         OntModel ontModel = ModelFactory.createOntologyModel();
         HangZhou hangZhou = new HangZhou();
-        hangZhou.readRDF(ontModel, CONSTANTS.INPUT_FILE_NAME);
+        hangZhou.readRDF(ontModel, Constant.INPUT_FILE_NAME);
 
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_日本料理, "/home/hiwhitley/文档/rdf/日本料理.json");
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_火锅, "/home/hiwhitley/文档/rdf/火锅.json");
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_海鲜, "/home/hiwhitley/文档/rdf/海鲜.json");
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_川菜, "/home/hiwhitley/文档/rdf/川菜.json");
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_湘菜, "/home/hiwhitley/文档/rdf/湘菜.json");
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_小吃快餐, "/home/hiwhitley/文档/rdf/小吃快餐.json");
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_粤菜, "/home/hiwhitley/文档/rdf/粤菜.json");
-//        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_自助餐, "/home/hiwhitley/文档/rdf/自助餐.json");
-        hangZhou.generateIndividuals(ontModel, CONSTANTS.re_烧烤, "/home/hiwhitley/文档/rdf/烧烤.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_日本料理, "/home/hiwhitley/文档/rdf/日本料理.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_火锅, "/home/hiwhitley/文档/rdf/火锅.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_海鲜, "/home/hiwhitley/文档/rdf/海鲜.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_川菜, "/home/hiwhitley/文档/rdf/川菜.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_湘菜, "/home/hiwhitley/文档/rdf/湘菜.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_小吃快餐, "/home/hiwhitley/文档/rdf/小吃快餐.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_粤菜, "/home/hiwhitley/文档/rdf/粤菜.json");
+//        hangZhou.generateIndividuals(ontModel, Constant.re_自助餐, "/home/hiwhitley/文档/rdf/自助餐.json");
+        hangZhou.generateIndividuals(ontModel, Constant.re_烧烤, "/home/hiwhitley/文档/rdf/烧烤.json");
 
         ontModel.write(System.out);
         hangZhou.writeToFile(ontModel);
@@ -70,7 +70,7 @@ public class HangZhou extends HangZhouBase {
     public void writeToFile(OntModel ontModel) {
         FileOutputStream file = null;
         try {
-            file = new FileOutputStream(CONSTANTS.OUT_FILE_NAME);
+            file = new FileOutputStream(Constant.OUT_FILE_NAME);
         } catch (FileNotFoundException e) {
             System.out.println("文件不存在");
             e.printStackTrace();
