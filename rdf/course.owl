@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#"
+     xml:base="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#staff_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#staff_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#student_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#student_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#CSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#CSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#CS101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#CS103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#CS103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Leturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Leturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#CS103"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M201"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">三</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">张</last_name>
+        <staff_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11054001</staff_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Leturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Leturer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M204">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Student1">
+        <studies rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#CS101"/>
+        <studies rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M201"/>
+        <studies rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M204"/>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gong</last_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack</last_name>
+        <student_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110524001</student_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#Student2">
+        <studies rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#CS103"/>
+        <studies rdf:resource="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/course#M204"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rose</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang</last_name>
+        <student_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110524002</student_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#CSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hiwhitley/ontologies/2016/10/courese#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
